@@ -1,0 +1,185 @@
+FILIPE
+
+Correção do dataflow de fornecedores_sap
+
+RESULTADO
+	não incluir fornecedores novos que chegarem do sap
+	finalizar fornecedores que tiverem no input e na base scd
+
+Testes
+	adiciona fornecedores novos do SAP direito
+	
+
+PASSOS
+	definir casos de teste das faturas
+		+ mesma data de documento para faturas com prazos documentos diferentes
+			- tanto para faturas antigas		- check : 7017258 - check
+			- quanto faturas novas			- check : 7017258 - check
+		+ fornecedor sem faturas já com prazos		- check : 7075559 - check
+
+		+ fornecedor sem faturas e sem prazos		- check : 7074881
+
+
+	criar bases para testes - check
+
+	pegar apenas um prazo antigo das faturas 	- check
+	preencher o prazo_pagamento_antigo		- CHECK
+		com o prazo da fatura antiga
+		não tem fatura antiga, com o prazo da fatura nova
+		não tem fatura, mantem null
+	verificar se fornecedores eliminados no dia 1° de janeiro tem impacto no dia 31/12 - check
+
+
+
+	RETIRAR ALTERAÇÕES
+	retirar filtro de fornecedores na query de source da base - check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feitos
+	CASOS DE TESTE
+	1047731, presente no input, não é para ser adicionado no SAP	- check
+	7073571, tá na base como SAP, finaliza para antes da data de início do input	- check
+	1096484, inclui fornecedor novo na base vindo do SAP	- check
+	1012665, fornecedor do ano passado vindo da base		- check
+	verificar datas de inclusão	- check
+
+
+UP20220114-ZGLFI357.PARQUET
+CURATED/CONVERTED/ROBO_SAP/TESOURARIA/ZGLFI357/2022/01/14/
+cbadlsedmbrazilsouth
+
+Correção do dataflow de fornecedores_sap
+
+RESULTADO
+	não incluir fornecedores novos que chegarem do sap
+	finalizar fornecedores que tiverem no input e na base scd
+
+Testes
+	adiciona fornecedores novos do SAP direito
+	
+
+PASSOS
+	definir casos de teste das faturas
+		+ mesma data de documento para faturas com prazos documentos diferentes
+			- tanto para faturas antigas		- check : 7017258 - check
+			- quanto faturas novas			- check : 7017258 - check
+		+ fornecedor sem faturas já com prazos		- check : 7075559 - check
+
+		+ fornecedor sem faturas e sem prazos		- check : 7074881
+
+
+	criar bases para testes - check
+
+	pegar apenas um prazo antigo das faturas 	- check
+	preencher o prazo_pagamento_antigo		- CHECK
+		com o prazo da fatura antiga
+		não tem fatura antiga, com o prazo da fatura nova
+		não tem fatura, mantem null
+	verificar se fornecedores eliminados no dia 1° de janeiro tem impacto no dia 31/12 - check
+
+
+
+	RETIRAR ALTERAÇÕES
+	retirar filtro de fornecedores na query de source da base - check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feitos
+	CASOS DE TESTE
+	1047731, presente no input, não é para ser adicionado no SAP	- check
+	7073571, tá na base como SAP, finaliza para antes da data de início do input	- check
+	1096484, inclui fornecedor novo na base vindo do SAP	- check
+	1012665, fornecedor do ano passado vindo da base		- check
+	verificar datas de inclusão	- check
+
+
+UP20220114-ZGLFI357.PARQUET
+CURATED/CONVERTED/ROBO_SAP/TESOURARIA/ZGLFI357/2022/01/14/
+cbadlsedmbrazilsouth
+
+
+Correção do dataflow de fornecedores_sap
+
+RESULTADO
+	não incluir fornecedores novos que chegarem do sap
+	finalizar fornecedores que tiverem no input e na base scd
+
+Testes
+	adiciona fornecedores novos do SAP direito
+	
+
+PASSOS
+	definir casos de teste das faturas
+		+ mesma data de documento para faturas com prazos documentos diferentes
+			- tanto para faturas antigas		- check : 7017258 - check
+			- quanto faturas novas			- check : 7017258 - check
+		+ fornecedor sem faturas já com prazos		- check : 7075559 - check
+
+		+ fornecedor sem faturas e sem prazos		- check : 7074881
+
+
+	criar bases para testes - check
+
+	pegar apenas um prazo antigo das faturas 	- check
+	preencher o prazo_pagamento_antigo		- CHECK
+		com o prazo da fatura antiga
+		não tem fatura antiga, com o prazo da fatura nova
+		não tem fatura, mantem null
+	verificar se fornecedores eliminados no dia 1° de janeiro tem impacto no dia 31/12 - check
+
+
+
+	RETIRAR ALTERAÇÕES
+	retirar filtro de fornecedores na query de source da base - check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feitos
+	CASOS DE TESTE
+	1047731, presente no input, não é para ser adicionado no SAP	- check
+	7073571, tá na base como SAP, finaliza para antes da data de início do input	- check
+	1096484, inclui fornecedor novo na base vindo do SAP	- check
+	1012665, fornecedor do ano passado vindo da base		- check
+	verificar datas de inclusão	- check
+
+
+UP20220114-ZGLFI357.PARQUET
+CURATED/CONVERTED/ROBO_SAP/TESOURARIA/ZGLFI357/2022/01/14/
+cbadlsedmbrazilsouth
+
+
+
